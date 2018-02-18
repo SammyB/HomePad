@@ -1,0 +1,24 @@
+---
+layout: styleguide
+title: Colours
+---
+
+<div class="colours">
+  {{#each styleguide.colours}}
+
+  <div class="row">
+    <div class="small-12 columns">
+      <h4 class="style-title__h4">{{this.title}}</h4>
+    </div>
+    {{#each this.items}}
+    <div class="small-4 columns">
+      <div class="colours-item" style="background-color: {{this}}">
+        <p>
+          {{this}}
+        </p>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/each}}
+</div>

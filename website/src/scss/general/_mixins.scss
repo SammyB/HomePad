@@ -1,0 +1,25 @@
+/// Create a responsive G unit (gutter unit) declaration given a CSS property
+@mixin g-unit($prop, $val, $ignore...) {
+  @each $breakpoint, $gutter in $grid-column-gutter {
+    @if not index($ignore, $breakpoint) {
+      @include breakpoint($breakpoint) {
+        #{$prop}: $val * $gutter;
+      }
+    }
+  }
+}
+
+@mixin space-unit($prop, $val, $ignore...) {
+  @each $breakpoint, $gutter in $spacing-gutter {
+    @if not index($ignore, $breakpoint) {
+      @include breakpoint($breakpoint) {
+        #{$prop}: $val * $gutter;
+      }
+    }
+  }
+}
+
+@mixin material-icon {
+  font-family: 'Material Icons';
+  font-feature-settings: 'liga';
+}

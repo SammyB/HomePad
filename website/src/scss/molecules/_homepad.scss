@@ -1,0 +1,79 @@
+.homepad {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+
+    &.fullpage-wrapper {
+        z-index: 11;
+    }
+
+    .fp-tableCell {
+        position: relative;
+    }
+
+    .background {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    &-image {
+        width: 100%;
+    }
+
+    &--device {
+        position: relative;
+        z-index: 10;
+
+        &.one {
+            z-index: 9;
+            position: absolute;
+            bottom: 150px;
+            left: 0;
+            right: 0;
+        }
+
+        &.one {
+            z-index: 9;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        &.two {
+            z-index: 9;
+        }
+
+        &.three {
+            z-index: 9;
+        }
+
+        &__image {
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+
+            @include breakpoint(small only) {
+                width: 60%;
+            }
+        }
+
+        &__text {
+            text-align: center;
+            padding: 15px 20px;
+
+            @include breakpoint(medium only) {
+                &.text-one {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &--row {
+        position: relative;
+        top: -100px;
+    }
+}

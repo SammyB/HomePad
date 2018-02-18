@@ -1,0 +1,140 @@
+@import 'main';
+
+[class^='grid-col-'],
+[class*=' -col-'] {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+
+.show-menu {
+  overflow: hidden;
+}
+
+.container {
+  padding-top: 70px;
+}
+
+.grid-guide {
+  & > div {
+    @include g-unit(padding-top, 1);
+    @include g-unit(padding-bottom, 1);
+  }
+
+  .row {
+    @include g-unit(padding, 0.5);
+    @include g-unit(padding, 0.5);
+    background-color: get-colour('back', 'light');
+
+    @include breakpoint(large) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  .columns {
+    @include g-unit(margin-top, 0.5);
+    @include g-unit(margin-bottom, 0.5);
+    text-align: center;
+    position: relative;
+    background-color: get-colour('primary', 'light');
+
+    & > div {
+      background-color: get-colour('back');
+      padding: 40px 0;
+    }
+
+    &::before,
+    &::after {
+      @include g-unit(height, 0.5);
+      content: '';
+      font-size: 10px;
+      text-transform: uppercase;
+      display: block;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      opacity: 0.15;
+      // border: 1px solid rgba(255,255,255,0.3);
+
+    }
+
+    &::before {
+      @include g-unit(margin-top, -0.5);
+      top: 0;
+      background-color: get-colour('primary', 'light');
+    }
+
+    &::after {
+      @include g-unit(margin-bottom, -0.5);
+      bottom: 0;
+      background-color: get-colour('primary', 'light');
+    }
+
+    &:nth-child(odd) {
+      background-color: get-colour('tertiary', 'light');
+
+      &::before {
+        background-color: get-colour('tertiary', 'light');
+      }
+
+      &::after {
+        background-color: get-colour('tertiary', 'light');
+      }
+    }
+  }
+}
+
+.colours {
+  &-item {
+    padding: 70px 0;
+    color: #fff;
+    text-align: center;
+  }
+
+  .row {
+    @include space-unit(margin-bottom, 2);
+
+  }
+}
+
+.u-tc {
+  text-align: center;
+}
+
+.buttons-item {
+  @include space-unit(margin-bottom, 2);
+}
+
+.style-title {
+  &__h1 {
+    @include space-unit(margin-bottom, 2);
+    text-align: center;
+    font-size: 34px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &__h4 {
+    @include space-unit(margin-bottom, 2);
+    text-align: center;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+}
+
+.home,
+.campaign {
+  .row {
+    @include space-unit(padding, 1);
+  }
+}
+
+.campaign {
+  padding-top: 0;
+
+  .style-nav {
+    position: fixed;
+    width: 100%;
+  }
+}

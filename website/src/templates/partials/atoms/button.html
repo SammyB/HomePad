@@ -1,0 +1,21 @@
+{{#if this.action}}
+  <button type="{{this.type}}" class="button {{this.classes}}" id="{{this.id}}" {{this.attributes}} data-automation="{{this.name}}-{{this.id}}">
+    {{#if this.icon-place-before}}
+        <span class="icon icon-{{this.icon}}"></span>
+    {{/if}}
+      <span class="button__text">{{this.text}}</span>
+    {{#if this.icon-place-after}}
+        <span class="icon icon-{{this.icon}}"></span>
+    {{/if}}
+  </button>
+{{else}}
+  <a href="{{this.href}}" class="button {{this.classes}}" id="{{this.id}}" {{#if this.external}}target="_blank" {{/if}} {{this.attributes}} data-automation="{{this.name}}-{{this.id}}">
+      {{#if this.icon-place-before}}
+          <span class="icon icon-{{this.icon}}"></span>
+      {{/if}}
+        <span class="button__text">{{this.text}}</span>
+      {{#if this.icon-place-after}}
+          <span class="icon icon-{{this.icon}}"></span>
+      {{/if}}
+    </a>
+  {{/if}}

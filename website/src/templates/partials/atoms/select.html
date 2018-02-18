@@ -1,0 +1,9 @@
+<div class="form__select-wrap">
+  <select name="{{this.select.name}}" id="{{this.select.id}}"
+    class="form__select" data-automation="{{this.name}}-{{this.id}}">
+    {{#each this.select.options}}
+    <option value="{{this.value}}"
+    class="form__option">{{this.text}}</option>
+    {{/each}}
+  </select>
+</div>

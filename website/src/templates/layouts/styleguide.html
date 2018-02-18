@@ -1,0 +1,44 @@
+<!doctype html>
+<html class="no-js" lang="en-au">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{{title}}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styleguide.css">
+
+  </head>
+
+  <body>
+    <div class="container {{layoutClass}}">
+      <header>
+        {{> styleguide-nav }}
+      </header>
+      {{#if title}}
+      <h1 class="style-title__h1">{{title}}</h1>
+      {{/if}}
+
+      {{> body}}
+    </div>
+
+    <script src="/js/vendor.js"></script>
+    <script src="/js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+{
+  "colours": [
+    {
+      "title": "Primary",
+      "items": ["#273043", "#4E5565", "#1D2331"]
+    },
+    {
+      "title": "Secondary",
+      "items": ["#4AC9C7", "#8BDCDB", "#369391"]
+    },
+    {
+      "title": "Tertiary",
+      "items": ["#f74902", "#F98B5E", "#9E2F02"]
+    },
+    {
+      "title": "Accent",
+      "items": ["#FFDA61", "#FFE284", "#E8BF3A"]
+    },
+    {
+      "title": "Fore",
+      "items": ["#191919", "#333333", "#111111"]
+    },
+    {
+      "title": "Back",
+      "items": ["#DDDDDD", "#EEEEEE", "#CCCCCC"]
+    }
+  ],
+  "carouselImages": [
+      {
+        "alt": "iPad tablet and apple keyboard on a desk",
+        "src": "https://unsplash.it/600/400?image=668",
+        "srcset": [
+          "https://unsplash.it/1000/600?image=668 1000w",
+          "https://unsplash.it/1800/1000?image=668 1800w",
+          "https://unsplash.it/2800/1400?image=668 2800w"
+        ]
+      },
+      {
+        "alt": "A table with 6 white chairs",
+        "src": "https://unsplash.it/600/400?image=625",
+        "srcset": [
+          "https://unsplash.it/1000/600?image=625 1000w",
+          "https://unsplash.it/1800/1000?image=625 1800w",
+          "https://unsplash.it/2800/1400?image=625 2800w"
+        ]
+      },
+      {
+        "alt": "A desk with varias items, an apple imac, mouse, speakers and toys",
+        "src": "https://unsplash.it/600/400?image=532",
+        "srcset": [
+          "https://unsplash.it/1000/600?image=532 1000w",
+          "https://unsplash.it/1800/1000?image=532 1800w",
+          "https://unsplash.it/2800/1400?image=532 2800w"
+        ]
+      },
+      {
+        "alt": "A desk with a blank notepad and coffee cup",
+        "src": "https://unsplash.it/600/400?image=759",
+        "srcset": [
+          "https://unsplash.it/1000/600?image=759 1000w",
+          "https://unsplash.it/1800/1000?image=759 1800w",
+          "https://unsplash.it/2800/1400?image=759 2800w"
+        ]
+      }
+  ],
+  "forms": {
+    "select": {
+      "name": "select-sample",
+      "options": [
+        {
+          "text": "",
+          "value": 0
+        },
+        {
+          "text": "Item 1",
+          "value": 1
+        },
+        {
+          "text": "Item 2",
+          "value": 2
+        },
+        {
+          "text": "Item 3",
+          "value": 3
+        }
+      ]
+    }
+  },
+  "campaignPage": {
+    "title": "What will you create today",
+    "super": "retrograde",
+    "heroImage": {
+      "alt": "Old 18th century typrwriter with paper",
+      "src": "https://unsplash.it/600/400?image=486",
+      "srcset": [
+        "https://unsplash.it/1000/600?image=486 1000w",
+        "https://unsplash.it/1800/1200?image=486 1800w",
+        "https://unsplash.it/2800/1400?image=486 2800w"
+      ]
+    },
+    "sections": [
+      {
+        "title": "Accusamus quasi",
+        "copy": [
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quasi quidem laboriosam, nam libero quam ab, illum sit exercitationem quas excepturi impedit atque sint voluptatem dolorum nesciunt saepe asperiores adipisci possimus inventore autem tempore nobis, soluta! Quas, cum, corporis? Inventore.",
+          "Perferendis voluptatem libero, recusandae animi laudantium molestias veniam cupiditate, sapiente repellendus facere eius quas, numquam error corporis esse praesentium vero iste totam. Nulla similique aspernatur voluptate laboriosam odit necessitatibus eaque fugiat, nemo dolores iusto suscipit quae, minima earum, consequuntur ex?",
+          "Enim autem repellat facere nihil cum cupiditate iusto facilis sed et ut ipsam quisquam repudiandae ex iure in veniam, soluta officiis hic vero quo pariatur explicabo! Sapiente eligendi quisquam, minus id architecto ipsum a inventore. Dignissimos quae consequatur quibusdam exercitationem."
+        ]
+      },
+      {
+        "title": "Dolores animi",
+        "copy": [
+          "Laborum molestias numquam quas repellat eveniet, dolores animi amet fuga aut culpa, tempore, tenetur odit eius odio ab veritatis. Porro quam hic distinctio reiciendis eum consequuntur magni sapiente optio iure unde. Similique doloribus quos voluptatum perspiciatis eius accusantium, enim eos.",
+          "Quae fugiat maxime sed quibusdam rerum vel, et quam quos fugit iusto ipsa minima enim tempora iste, expedita maiores magnam quasi neque sit nam totam sunt itaque. Velit consectetur error reiciendis praesentium, dolores, ad fugit? Error ea aliquam tenetur quos.",
+          "Sed, repellendus, aspernatur! Non in sunt reprehenderit, necessitatibus ex est. Officia perferendis explicabo, unde iure, tempora, quidem numquam maxime pariatur rerum magni est. Nobis natus voluptatem laudantium esse nam, sunt voluptates veritatis obcaecati incidunt, aliquid, in rerum? Veniam, dicta deleniti."
+        ]
+      },
+      {
+        "title": "Esse architecto",
+        "copy": [
+          "Placeat animi autem, aut dolore voluptas molestias, blanditiis voluptates dicta esse architecto reiciendis obcaecati eligendi, perspiciatis rem libero nisi. Similique autem explicabo qui rerum, totam libero incidunt assumenda corrupti rem quis cupiditate dolorum labore. Magni consequatur a officiis repellat, velit!",
+          "Commodi repellendus enim repudiandae natus doloribus, blanditiis earum cupiditate, molestiae error in aspernatur dolor eos eveniet dolores accusantium quibusdam non. Voluptas facere fugiat impedit earum eaque fugit, eius possimus accusantium dolores deserunt molestiae quos exercitationem quam quaerat voluptatum, dolore minus.",
+          "Ipsam tenetur, perferendis, ducimus modi nesciunt illo necessitatibus aspernatur voluptatem, consectetur voluptatum sed quae. Laborum vero cupiditate voluptatibus necessitatibus ipsum perspiciatis, hic voluptates porro dolorem aspernatur accusamus laboriosam consequatur consectetur dolores nihil, non odio minima dolor quam labore ullam fugiat?"
+        ]
+      }
+    ]
+  }
+}

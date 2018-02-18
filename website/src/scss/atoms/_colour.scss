@@ -1,0 +1,149 @@
+.-color {
+  &-primary {
+    color: get-colour('primary');
+
+    &-light {
+      color: get-colour('primary', 'light');
+    }
+
+    &-dark {
+      color: get-colour('primary', 'dark');
+    }
+  }
+
+  &-secondary {
+    color: get-colour('secondary');
+
+    &-light {
+      color: get-colour('secondary', 'light');
+    }
+
+    &-dark {
+      color: get-colour('secondary', 'dark');
+    }
+  }
+
+  &-tertiary {
+    color: get-colour('tertiary');
+
+    &-light {
+      color: get-colour('tertiary', 'light');
+    }
+
+    &-dark {
+      color: get-colour('tertiary', 'dark');
+    }
+  }
+
+  &-accent {
+    color: get-colour('accent');
+
+    &-light {
+      color: get-colour('accent', 'light');
+    }
+
+    &-dark {
+      color: get-colour('accent', 'dark');
+    }
+  }
+
+  &-back {
+    color: get-colour('back');
+
+    &-light {
+      color: get-colour('back', 'light');
+    }
+
+    &-dark {
+      color: get-colour('back', 'dark');
+    }
+  }
+
+  &-fore {
+    color: get-colour('fore');
+
+    &-light {
+      color: get-colour('fore', 'light');
+    }
+
+    &-dark {
+      color: get-colour('fore', 'dark');
+    }
+  }
+}
+
+.-bg {
+  &-primary {
+    background-color: get-colour('primary');
+
+    &-light {
+      background-color: get-colour('primary', 'light');
+    }
+
+    &-dark {
+      background-color: get-colour('primary', 'dark');
+    }
+  }
+
+  &-secondary {
+    background-color: get-colour('secondary');
+
+    &-light {
+      background-color: get-colour('secondary', 'light');
+    }
+
+    &-dark {
+      background-color: get-colour('secondary', 'dark');
+    }
+  }
+
+  &-tertiary {
+
+    background-color: get-colour('tertiary');
+
+    &-light {
+      background-color: get-colour('tertiary', 'light');
+    }
+
+    &-dark {
+      background-color: get-colour('tertiary', 'dark');
+    }
+
+  }
+
+  &-accent {
+    background-color: get-colour('accent');
+
+    &-light {
+      background-color: get-colour('accent', 'light');
+    }
+
+    &-dark {
+      background-color: get-colour('accent', 'dark');
+    }
+  }
+
+  &-back {
+    background-color: get-colour('back');
+
+    &-light {
+      background-color: get-colour('back', 'light');
+    }
+
+    &-dark {
+      background-color: get-colour('back', 'dark');
+    }
+  }
+
+  &-fore {
+    background-color: get-colour('fore');
+
+    &-light {
+      background-color: get-colour('fore', 'light');
+    }
+
+    &-dark {
+      background-color: get-colour('fore', 'dark');
+    }
+  }
+}

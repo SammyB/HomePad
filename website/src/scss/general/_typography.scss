@@ -1,0 +1,33 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: $bodyLineHeight;
+  margin: 0;
+}
+
+@each $breakpoint, $levels in $header-sizes {
+  @include breakpoint($breakpoint) {
+    @each $level, $size in $levels {
+      #{$level} {
+        font-size: $size;
+      }
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headerFont;
+  font-weight: 700;
+  line-height: $headerLineHeight;
+  margin: 20px 0;
+}
+
+strong {
+  font-weight: 600;
+}

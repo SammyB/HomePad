@@ -1,0 +1,26 @@
+//From: https://scotch.io/tutorials/aesthetic-sass-2-colors
+@function get-colour(
+  $name: 'primary',
+  $variant: $colour-key,
+  $opacity: 1
+) {
+  $colour: null;
+
+  // Get the colour spectrum
+  $colour-spectrum: map-get($colours, $name);
+
+  // Get the colour variant
+  @if $colour-spectrum {
+    $colour: map-get($colour-spectrum, $variant);
+  }
+
+  // Get the alpha setting
+  $alpha: if(type-of($colour-opacity) == 'number', $opacity, map-get($colour-opacity, $opacity));
+
+  // Set the alpha of the colour
+  @if $alpha {
+    $colour: rgba($colour, $alpha);
+  }
+
+  @return $colour;
+}

@@ -1,0 +1,12 @@
+<div class="hero">
+  {{#if this.sup}}
+  <sup class="hero__sup">{{this.sup}}</sup>
+  {{/if}}
+  <h1 class="hero__title">{{this.title}}</h1>
+  {{#if this.sub}}
+  <sub class="hero__sub">{{this.sub}}</sub>
+  {{/if}}
+  <div class="hero__cover">
+    {{> image img=this.img class="hero__image" }}
+  </div>
+</div>

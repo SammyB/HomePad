@@ -1,0 +1,120 @@
+.form {
+
+  &__row {
+    @include g-unit(margin-bottom, 1);
+    padding: 0;
+
+    &-list {
+      @include g-unit(margin-right, 1);
+      list-style: none;
+      display: inline-block;
+    }
+  }
+
+  &__label,
+  &__input,
+  &__select {
+    color: get-colour('fore', 'dark');
+    display: block;
+    width: 100%;
+  }
+
+  &__input,
+  &__select {
+    padding: $inputPadding;
+    outline: 1px solid get-colour('back', 'light');
+    border: 0;
+  }
+
+  &__select {
+    appearance: none;
+    background: transparent;
+    position: relative;
+    z-index: 1;
+
+    // Remove IE select dropdown arrow
+    &::-ms-expand {
+      display: none;
+    }
+  }
+
+  &__select-wrap {
+    background-color: #fff;
+    position: relative;
+
+    &::before {
+      @include material-icon;
+      content: 'expand_more';
+      display: block;
+      position: absolute;
+      z-index: 0;
+      right: 10px;
+      font-size: 28px;
+
+    }
+  }
+
+  &__label {
+    @include g-unit(margin-bottom, 0.2);
+    font-weight: 400;
+
+    &-radio,
+    &-checkbox {
+      padding-left: 30px;
+      position: relative;
+      cursor: pointer;
+
+      &::before {
+        @include material-icon;
+        content: '';
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 20px;
+        left: 0;
+        line-height: 18px;
+        text-align: center;
+        background-color: get-colour('back', 'light');;
+        border: 1px solid get-colour('back', 'dark');
+      }
+    }
+
+    &-radio {
+      &::before {
+        border-radius: 100%;
+        font-size: 16px;
+      }
+    }
+
+    &-checkbox {
+      &::before {
+        font-size: 18px;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  &__input-radio,
+  &__input-checkbox {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+
+  &__input-radio {
+    &:checked ~ label {
+      &::before {
+        content: 'fiber_manual_record';
+      }
+    }
+  }
+
+  &__input-checkbox {
+    &:checked ~ label {
+      &::before {
+        content: 'done';
+      }
+    }
+  }
+}

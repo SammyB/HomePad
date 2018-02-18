@@ -1,0 +1,61 @@
+.button {
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: map-get($button-padding, default);
+  font-size: map-get($button-sizes, default);
+  text-align: center;
+  text-decoration: none;
+  background-color: get-colour('primary');
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+
+  &:hover {
+    background-color: get-colour('primary', 'dark');
+  }
+
+  &-secondary {
+    background-color: get-colour('secondary');
+
+    &:hover {
+      background-color: get-colour('secondary', 'dark');
+    }
+  }
+
+  &-tertiary {
+    background-color: get-colour('tertiary');
+
+    &:hover {
+      background-color: get-colour('tertiary', 'dark');
+    }
+  }
+
+  &-accent {
+    background-color: get-colour('accent');
+
+    &:hover {
+      background-color: get-colour('accent', 'dark');
+    }
+  }
+
+  &--full {
+    display: block;
+    width: 100% !important;
+  }
+
+  // Sizes
+  @each $size, $value in map-remove($button-sizes, default) {
+    &--#{$size} {
+      font-size: $value;
+    }
+  }
+
+  // Paddings
+  @each $size, $value in map-remove($button-padding, default) {
+    &--#{$size} {
+      padding: $value;
+    }
+  }
+
+}

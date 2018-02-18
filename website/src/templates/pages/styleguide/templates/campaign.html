@@ -1,0 +1,24 @@
+---
+layout: styleguide
+layoutClass: campaign
+---
+<div>
+  <div class="">
+    {{> hero title=styleguide.campaignPage.title sup=styleguide.campaignPage.super img=styleguide.campaignPage.heroImage}}
+  </div>
+
+  <p><i class="icon icon-pencil"></i></p>
+  {{#each styleguide.campaignPage.sections}}
+  <div class="row">
+    <div class="medium-8 large-6 small-centered columns">
+      <h4>{{this.title}}</h4>
+      {{#each this.copy}}
+      <p>{{this}}</p>
+      {{/each}}
+    </div>
+  </div>
+  {{#ifequal @index 1 }}
+    {{> carousel images=../styleguide.carouselImages }}
+  {{/ifequal}}
+  {{/each}}
+</div>

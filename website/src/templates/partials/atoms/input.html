@@ -1,0 +1,8 @@
+{{#if this.label}}
+<label for="{{this.id}}" class="form__label form__label-{{this.type}} {{this.labelClasses}}">{{this.label}}</label>
+{{/if}}
+{{#if this.textarea}}
+<textarea id="{{this.id}}" class="form__input form__input-{{this.type}} {{this.inputClasses}}" type="{{this.type}}" name="{{this.name}}" value="{{this.value}}" data-automation="{{this.name}}-{{this.id}}"></textarea>
+{{else}}
+<input id="{{this.id}}" data-atomation="{{this.type}}" class="form__input form__input-{{this.type}} {{this.inputClasses}}" type="{{this.type}}" name="{{this.name}}" value="{{this.value}}" data-automation="{{this.name}}-{{this.id}}">
+{{/if}}

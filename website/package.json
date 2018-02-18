@@ -1,0 +1,89 @@
+{
+  "name": "boilerplate",
+  "version": "1.1.0",
+  "description": "framework to start a new web project",
+  "private": true,
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "start": "gulp serve",
+    "start:prod": "gulp serve:prod",
+    "lint": "gulp lint",
+    "build": "gulp",
+    "precommit": "npm run lint",
+    "prepush": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-lodash": "^3.3.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "browser-sync": "^2.23.6",
+    "del": "^3.0.0",
+    "eslint": "^4.18.0",
+    "expose-loader": "^0.7.3",
+    "globals-loader": "0.0.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-eslint": "^4.0.2",
+    "gulp-iconfont": "^9.1.0",
+    "gulp-iconfont-css": "^2.1.0",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-lint": "^1.3.4",
+    "gulp-size": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.4",
+    "html-loader": "^0.5.5",
+    "http-proxy-middleware": "^0.17.4",
+    "husky": "^0.14.3",
+    "imagemin-gifsicle": "^5.2.0",
+    "imagemin-mozjpeg": "^7.0.0",
+    "imagemin-pngquant": "^5.0.1",
+    "ngrok": "^2.2.26",
+    "panini": "^1.6.1",
+    "run-sequence": "^2.2.1",
+    "script-loader": "^0.7.2",
+    "webpack": "^2.2.1",
+    "webpack-stream": "^3.2.0",
+    "wiredep": "^4.0.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true,
+      "browser": true
+    },
+    "rules": {
+      "quotes": [
+        2,
+        "single"
+      ]
+    }
+  },
+  "dependencies": {
+    "aos": "^2.2.0",
+    "es6-promise": "^4.2.4",
+    "foundation-sites": "^6.4.3",
+    "fullpage.js": "^2.9.6",
+    "hamburgers": "^0.9.3",
+    "hammerjs": "^2.0.8",
+    "jquery": "^3.3.1",
+    "js-cookie": "^2.2.0",
+    "lodash": "^4.17.5",
+    "lory.js": "^2.3.4",
+    "normalize-scss": "^7.0.1",
+    "object-fit-images": "^3.2.3"
+  }
+}
