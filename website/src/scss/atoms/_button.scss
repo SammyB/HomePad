@@ -1,19 +1,29 @@
 .button {
-  color: #fff;
   text-transform: uppercase;
   display: inline-block;
   padding: map-get($button-padding, default);
   font-size: map-get($button-sizes, default);
   text-align: center;
   text-decoration: none;
-  background-color: get-colour('primary');
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-weight: 600;
 
-  &:hover {
-    background-color: get-colour('primary', 'dark');
+  margin-bottom: 0;
+  color: #ababab;
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid #ababab;
+
+  &:hover,
+  &:focus {
+      background: #ababab;
+      color: #fff;
   }
+
+  // &:hover {
+  //   background-color: get-colour('primary', 'dark');
+  // }
 
   &-secondary {
     background-color: get-colour('secondary');

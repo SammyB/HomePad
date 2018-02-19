@@ -6,9 +6,9 @@ $(() => {
 
   $(document).foundation();
 
-  $('#fullpage').fullpage({
-    scrollBar: true
-  });
+  // $('#fullpage').fullpage({
+  //   scrollBar: true
+  // });
 
   AOS.init({
     duration: 800,
@@ -16,7 +16,7 @@ $(() => {
 
   $('#ajax-contact-form').submit(function(){
     var str = $(this).serialize();
-  
+
     $.ajax({
       type: 'POST',
       url: 'contact.php',
